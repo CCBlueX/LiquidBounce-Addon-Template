@@ -93,6 +93,21 @@ Everything marked `@AddonApi` in the client is stable between releases; the rest
 larger example, Kotlin and Java side by side and game tested, see
 [LiquidBounce-Addon-Extras](https://github.com/CCBlueX/LiquidBounce-Addon-Extras).
 
+## Publishing
+
+A GitHub release pushes the jar to the LiquidBounce Marketplace. Create the add-on and an API token at
+[liquidbounce.net/account/resources](https://liquidbounce.net/account/resources), then set both on the
+repository under Settings, Secrets and variables, Actions:
+
+| Kind     | Name                  | Value                              |
+|----------|-----------------------|------------------------------------|
+| Variable | `MARKETPLACE_ITEM_ID` | the ID shown next to your add-on   |
+| Secret   | `API_TOKEN`           | the token, it is only shown once   |
+
+The release tag becomes the version and the release notes become the changelog, so keep the tag in line
+with `mod_version`. Pre-releases are skipped. Uploads wait for review before clients see them, unless
+the account is a trusted publisher.
+
 ## License
 
 This project is subject to the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). This
