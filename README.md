@@ -104,8 +104,10 @@ repository under Settings, Secrets and variables, Actions:
 | Variable | `MARKETPLACE_ITEM_ID` | the ID shown next to your add-on   |
 | Secret   | `API_TOKEN`           | the token, it is only shown once   |
 
-The release tag becomes the version and the release notes become the changelog, so keep the tag in line
-with `mod_version`. Pre-releases are skipped. Uploads wait for review before clients see them, unless
+The build versions the add-on as `<mod_version>+<minecraft>`, e.g. `1.0.0+26.3`, so one version can be
+released for several Minecraft versions. Tag the release with that version, `v1.0.0+26.3`: the tag becomes the
+version on the Marketplace, the release notes its changelog, and the release fails when the tag and the jar
+differ. Pre-releases are skipped. Uploads wait for review before clients see them, unless
 the account is a trusted publisher.
 
 ## License
