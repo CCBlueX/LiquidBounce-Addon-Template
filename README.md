@@ -56,7 +56,7 @@ flowchart TD
 `gradle/libs.versions.toml`:
 
 ```toml
-liquidbounce = "0.41.0+26.3"
+liquidbounce = "0.42.0+26.3"
 ```
 
 - `<version>+<mc>` for a release, from `maven.ccbluex.net/releases`
