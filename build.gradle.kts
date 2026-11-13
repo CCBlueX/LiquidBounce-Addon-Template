@@ -47,7 +47,7 @@ dependencies {
     implementation(libs.liquidbounce)
 }
 
-// Gradle keeps a resolved snapshot for a day; the client publishes one on every push to nextgen.
+// Gradle keeps a resolved snapshot for a day; the client publishes one on every push to main.
 configurations.all {
     resolutionStrategy.cacheChangingModulesFor(0, "seconds")
 }

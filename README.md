@@ -60,7 +60,7 @@ liquidbounce = "0.42.0+26.3"
 ```
 
 - `<version>+<mc>` for a release, from `maven.ccbluex.net/releases`
-- `<version>+<mc>-SNAPSHOT` for the moving nextgen build, from `maven.ccbluex.net/snapshots`
+- `<version>+<mc>-SNAPSHOT` for the moving main build, from `maven.ccbluex.net/snapshots`
 - `<version>+<mc>-<sha>-SNAPSHOT` to pin one commit
 
 To build against a local client, run `./gradlew publishToMavenLocal` in a LiquidBounce checkout;
